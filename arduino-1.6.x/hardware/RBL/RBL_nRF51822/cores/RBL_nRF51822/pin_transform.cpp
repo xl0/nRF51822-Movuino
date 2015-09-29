@@ -99,6 +99,39 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
 	}
 #endif
 
+#ifdef BLE_MOVUINO_099_6
+	switch(pin)
+	{
+		case 0 : return_pin = p0_11; break;
+		case 1 : return_pin = p0_9; break;
+		case 2 : return_pin = p0_8; break;
+		case 3 : return_pin = p0_10; break;
+
+		case 4 : return_pin = p0_12; break;
+		case 5 : return_pin = p0_13; break;
+		case 6 : return_pin = p0_14; break;
+		case 7 : return_pin = p0_15; break;
+		case 8 : return_pin = p0_24; break;
+		case 9 : return_pin = p0_23; break;
+		case 10 : return_pin = p0_21; break;
+		case 11 : return_pin = p0_17; break;
+		case 12 : return_pin = p0_18; break;
+		case 13 : return_pin = p0_19; break;
+		case 14 : return_pin = p0_1; break;
+		case 15 : return_pin = p0_2; break;
+		case 16 : return_pin = p0_3; break;
+		case 17 : return_pin = p0_4; break;
+		case 18 : return_pin = p0_5; break;
+		case 19 : return_pin = p0_6; break;
+		case 20 : return_pin = p0_29; break;
+		case 21 : return_pin = p0_28; break;
+		case 22 : return_pin = p0_25; break;
+		case 23 : return_pin = p0_22; break;
+		case 24 : return_pin = p0_20; break;
+
+		default : return_pin = (PinName)NC;break;		
+	}
+#endif
 	return (return_pin);
 }
 
